@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2CA277B2079AC7856980EF86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2CA277B2079AC7856980EF86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4E9BEBC1FBD36D88E8EA64C6 /* Pods-MSFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFoundation_Tests.release.xcconfig"; path = "Target Support Files/Pods-MSFoundation_Tests/Pods-MSFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MSFoundation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFoundation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,11 +61,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75FEAFF9CE40C937F0F237BB /* Pods-MSFoundation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFoundation_Example.debug.xcconfig"; path = "Target Support Files/Pods-MSFoundation_Example/Pods-MSFoundation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D7576D406C59B28D1CDEDCA /* MSFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSFoundation.podspec; path = ../MSFoundation.podspec; sourceTree = "<group>"; };
+		9D7576D406C59B28D1CDEDCA /* MSFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSFoundation.podspec; path = ../MSFoundation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A947AEBBCC9D2A10F7D119E5 /* Pods-MSFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFoundation_Example.release.xcconfig"; path = "Target Support Files/Pods-MSFoundation_Example/Pods-MSFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AD847EABA7D1274B8F628ABA /* Pods_MSFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB50276018451074FFC9570E /* Pods-MSFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFoundation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MSFoundation_Tests/Pods-MSFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC74689C93F0C2F842B3B3A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DC74689C93F0C2F842B3B3A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EDDDC5C15C4C28C6F493273C /* Pods_MSFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				DB50276018451074FFC9570E /* Pods-MSFoundation_Tests.debug.xcconfig */,
 				4E9BEBC1FBD36D88E8EA64C6 /* Pods-MSFoundation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MSFoundation_Example/Pods-MSFoundation_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MSFoundation/MSFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
