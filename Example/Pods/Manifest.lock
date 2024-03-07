@@ -1,0 +1,23 @@
+PODS:
+  - MSFoundation (0.1.0):
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - MSFoundation (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - YYModel
+
+EXTERNAL SOURCES:
+  MSFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSFoundation: 6b71f946e8407c5fd3b294b0f30c3040df87c714
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 47c7eb2b1e798400fef81f42f6676bfbb60e17f7
+
+COCOAPODS: 1.11.3

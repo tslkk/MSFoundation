@@ -1,0 +1,6 @@
+framework module MSFoundation {
+  umbrella header "MSFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}
